@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  kali:
+    image: booyaabes/kali-linux-full
+    volumes:
+      - $HOME/.Xauthority:/root/.Xauthority
+    network_mode: "host"
+    command: ["/bin/bash"]
+    privileged: true
